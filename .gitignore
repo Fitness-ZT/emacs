@@ -59,3 +59,10 @@ flycheck_*
 Thumbs.db
 .direnv/
 .envrc
+
+
+# --- Native Compilation 缓存 (Emacs 28/29/30 特有，体积巨大) ---
+eln-cache/
+
+# --- Emacs 教程生成的临时目录 ---
+tutorial/
