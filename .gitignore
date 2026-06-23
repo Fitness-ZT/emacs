@@ -1,0 +1,61 @@
+# ==============================================================================
+# Emacs 配置专用 .gitignore 模板
+# ==============================================================================
+
+# --- 1. 临时文件与备份文件 (最重要，必须忽略) ---
+*~
+\#*\#
+.\#*
+*_archive*
+_backup*
+
+# --- 2. 编译后的字节码文件 (每次运行会自动生成，无需提交) ---
+*.elc
+
+# --- 3. 插件包下载目录 (由 init.el 自动下载，无需提交) ---
+elpa/
+straight/
+.local/
+site-lisp/submodules/
+
+# --- 4. 各种运行时的历史记录和缓存 (避免高频变动导致 Git 冲突) ---
+auto-save-list/
+.cache/
+cache/
+var/
+etc/
+request/
+url/
+tramp/
+network-security.data
+projects.eld
+known-hosts
+
+# --- 5. 常用插件的历史与状态记录 ---
+# 菜单栏、最近打开文件、书签、Eshell 历史等
+recentf
+places
+bookmarks
+history
+custom.el
+eshell/history
+eshell/lastdir
+projectile-bookmarks.eld
+projectile.cache
+.projectile
+session.*
+todo-list.el
+
+# --- 6. 语法检查与补全缓存 (LSP & Flycheck) ---
+.lsp-session-v1
+.eglot-cache/
+.flycheck*
+flycheck_*
+.pdm-home/
+.mypy_cache/
+
+# --- 7. 系统与编辑器相关 ---
+.DS_Store
+Thumbs.db
+.direnv/
+.envrc
